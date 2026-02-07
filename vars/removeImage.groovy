@@ -1,4 +1,3 @@
-def call(String imageName) {
-    sh "docker rmi ${imageName}"
+def call(String imageName, String imageTag) {
+    sh "docker rmi ${imageName}:${imageTag}"
 }
-
